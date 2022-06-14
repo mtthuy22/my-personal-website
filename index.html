@@ -16,11 +16,11 @@
   <header class="header">
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__list--item"><a href="#home">Home</a></li>
-        <li class="menu__list--item"><a href="#about">Profile</a></li>
-        <li class="menu__list--item"><a href="#skills">Skills</a></li>
-        <li class="menu__list--item"><a href="#experience">Experience</a></li>
-        <li class="menu__list--item"><a href="#contact">Contact</a></li>
+        <li class="menu__item"><a href="#home">Home</a></li>
+        <li class="menu__item"><a href="#about">Profile</a></li>
+        <li class="menu__item"><a href="#skills">Skills</a></li>
+        <li class="menu__item"><a href="#experience">Experience</a></li>
+        <li class="menu__item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +29,7 @@
 
   <!--COVER IMAGE-->
   <div class="cover__page">
-    <h1>Hi, I am Thuy</h1>
+    <h1 class="section__title">Hi, I am Thuy</h1>
     <p>Junior Web & FE developer</p>
     <a href="https://resume.io/r/NillTxxz9"><button>Full CV view</button>
   </div></a>
@@ -69,70 +69,115 @@
   </section>
 
 
-  
+
   <!--skills -->
 
 
   <section id="skills">
-    <h1>Skills</h1>
-    <div class="skills__container">
-      <div class="skill__info">
+    <h1 class="section__title">Skills</h1>
+    <ul class="section__list">
+      <li class="skill">
         <div class="skill__icon--wrap">
           <i class="fa-solid fa-code fa-2xl"></i>
         </div>
         <h4 class="skill__title">HTML</h4>
-        <p class="skill__desc">Semantic HTML elements, tables, lists, BEM methodology </p> 
-      </div>
-      <div class="skill__info">
-        <div class="skill__icon--wrap">
+        <p class="skill__desc">Semantic HTML elements, tables, lists, BEM methodology </p>
+      </li>
+      <li class="skill">
+        <div class="skill__icon">
           <i class="fa-brands fa-css3 fa-2xl"></i>
         </div>
         <h4 class="skill__title">CSS</h4>
-        <p class="skill__desc">Grid, flexbox, SASS/SCSS preprocessor, basics of responsive design </p> 
-      </div>
-      <div class="skill__info">
-        <div class="skill__icon--wrap">
+        <p class="skill__desc">Grid, flexbox, SASS/SCSS preprocessor, basics of responsive design </p>
+      </li>
+      <li class="skill">
+        <div class="skill__icon">
           <i class="fa-brands fa-js fa-2xl"></i>
         </div>
         <h4 class="skill__title">Javascript</h4>
-        <p class="skill__desc">Basic knowledge of JavaScript, working with functions, arrays, DOM </p> 
-      </div>
-      <div class="skill__info">
-        <div class="skill__icon--wrap">
+        <p class="skill__desc">Basic knowledge of JavaScript, working with functions, arrays, DOM </p>
+      </li>
+      <li class="skill">
+        <div class="skill__icon">
           <i class="fa-brands fa-react fa-2xl"></i>
         </div>
         <h4 class="skill__title">JS Frameworks</h4>
         <p class="skill__desc">
           React.js - basics, components, reading API data, useState and useEffect hooks <br>
-          Vue.js - Basic theoretical knowledge  </p> 
-      </div>
-      <div class="skill__info">
-        <div class="skill__icon--wrap">
+          Vue.js - Basic theoretical knowledge </p>
+      </li>
+      <li class="skill">
+        <div class="skill__icon">
           <i class="fa-solid fa-language fa-2xl"></i>
         </div>
         <h4 class="skill__title">Multilingual</h4>
         <p class="skill__desc">English - full proficiency level <br>
           French - intermediate level <br>
           Japanese - elementary level <br>
-          Czech, Vietnamese - native speaker </p> 
-      </div>
-      <div class="skill__info">
-        <div class="skill__icon--wrap">
+          Czech, Vietnamese - native speaker </p>
+      </li>
+      <li class="skill">
+        <div class="skill__icon">
           <i class="fa-solid fa-ellipsis fa-2xl"></i>
         </div>
         <h4 class="skill__title">Other</h4>
         <p class="skill__desc">Adobe Photoshop, InDesign basics
           Digital illustration
-          Accounting software </p> 
-      </div>
-    </div>
+          Accounting software </p>
+      </li>
+    </ul>
 
   </section>
 
+  <!-- Experience-->
 
+  <section id="experience">
+    <h1 class="section__title">Experience</h1>
+    <ul class="section__list">
+      <li class="experience">
+        <h4 class="experience__title">Goodwill Housing s.r.o.</h4>
+        <div class="experience__text">
+          <p>Business manager</p>
+          <p>2017 - present</p>
+        </div>
+      </li>
+      <li class="experience">
+        <h4 class="experience__title">Fox Hunter s.r.o.</h4>
+        <div class="experience__text">
+          <p>Project specialist</p>
+          <p>2015 - 2017</p>
+        </div>
+      </li>
+      <li class="experience">
+        <h4 class="experience__title">AC&C Public Relations s.r.o.</h4>
+        <div class="experience__text">
+          <p>Account executive</p>
+          <p>2014 - 2015</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-
-
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact__container">
+      <div class="contact__info">
+        <p>Thanks for scrolling!</p>
+        <p>Thu Thuy Mai</p>
+        <p>Junior Web & FE developer</p>
+      </div>
+      <div class="contact__details">
+        <p>Contact me</p>
+        <p>mai.thuthuy91@gmail.com</p>
+        <p>+420 724 966 657</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p> &copy; Thu Thuy Mai 2022</p>
+  </footer>
 </body>
 
 </html>

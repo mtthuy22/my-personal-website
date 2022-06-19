@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets\css\style.css">
   <title>Hi, I am Thuy</title>
-
   <script src="https://kit.fontawesome.com/923d045525.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,11 +16,11 @@
   <header class="header">
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#home">Home</a></li>
-        <li class="menu__item"><a href="#about">Profile</a></li>
-        <li class="menu__item"><a href="#skills">Skills</a></li>
-        <li class="menu__item"><a href="#experience">Experience</a></li>
-        <li class="menu__item"><a href="#contact">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#about">Profile</a></li>
+        <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+        <li class="menu__item"><a class="menu__link" href="#experience">Experience</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -34,8 +34,9 @@
     <a href="https://resume.io/r/NillTxxz9"><button>Full CV view</button>
   </div></a>
 
+  <main class="content">
+    
   <!--about-->
-
   <section id="about">
     <div class="about__img">
       <img src="assets/img/me_photo.jpg" alt="profile-pic" />
@@ -61,14 +62,12 @@
       </div>
       <div class="about__social">
         <div class="about__social">
-          <a href="https://www.linkedin.com/in/tthuymai/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/mtthuy22"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tthuymai/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+          <a href="https://github.com/mtthuy22"><i class="fa-brands fa-github fa-2x"></i></a>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <!--skills -->
 
@@ -77,7 +76,7 @@
     <h1 class="section__title">Skills</h1>
     <ul class="section__list">
       <li class="skill">
-        <div class="skill__icon--wrap">
+        <div class="skill__icon">
           <i class="fa-solid fa-code fa-2xl"></i>
         </div>
         <h4 class="skill__title">HTML</h4>
@@ -88,7 +87,7 @@
           <i class="fa-brands fa-css3 fa-2xl"></i>
         </div>
         <h4 class="skill__title">CSS</h4>
-        <p class="skill__desc">Grid, flexbox, SASS/SCSS preprocessor, basics of responsive design </p>
+        <p class="skill__desc">Grid, flexbox, Sass/SCSS preprocessor, basics of responsive design </p>
       </li>
       <li class="skill">
         <div class="skill__icon">
@@ -173,7 +172,7 @@
       </div>
     </div>
   </section>
-  
+</main> 
   <!-- Footer -->
   <footer class="footer">
     <p> &copy; Thu Thuy Mai 2022</p>

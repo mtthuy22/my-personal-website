@@ -18,7 +18,6 @@ body {
 
 main {
   margin: 0;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -134,7 +133,7 @@ ul {
 }
 
 #about {
-  height: 85vh;
+  height: 70vh;
   padding: 100px 200px;
 }
 
@@ -142,6 +141,32 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 30px;
+}
+
+#skills {
+  background-color: #393D3F;
+  color: #F7F5FB;
+  padding: 90px 90px;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.section__list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 
 .footer {

@@ -1,10 +1,43 @@
 #about {
-height: 70vh;
-padding: 100px 200px;
+    padding: 80px 100px;
 }
 
-.about{
- display: grid;
- grid-template-columns: repeat(2, auto);
- gap: 30px;
+.about {
+    display: grid;
+    grid-template-columns: auto 630px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    &__info {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h1,
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 0.5em;
+
+        a .fa-brands {
+            color: $dark;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    &__text {
+        text-align: justify;
+        text-justify: inter-word;
+    }
 }

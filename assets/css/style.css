@@ -26,6 +26,10 @@ ul {
   list-style-type: none;
 }
 
+.section__title {
+  font-size: 40px;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -77,7 +81,7 @@ ul {
 .cover {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header_1.png"), no-repeat;
   background-size: 100%;
   filter: grayscale(1);
@@ -133,32 +137,48 @@ ul {
 }
 
 #about {
-  height: 70vh;
-  padding: 100px 200px;
+  padding: 80px 100px;
 }
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 30px;
+  grid-template-columns: auto 630px;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.about__info {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about__info h1,
+.about__info h4 {
+  margin-top: 0;
+}
+.about__social {
+  display: flex;
+  gap: 0.5em;
+}
+.about__social a .fa-brands {
+  color: #393D3F;
+}
+.about__img {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+.about__text {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-#skills {
+.skills {
   background-color: #393D3F;
   color: #F7F5FB;
   padding: 90px 90px;
-}
-
-.section__title {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-.section__list {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  gap: 30px;
+  display: flex;
 }
 
 .skill {

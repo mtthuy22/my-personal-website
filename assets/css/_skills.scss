@@ -1,22 +1,15 @@
-#skills{
+
+
+.skills{
     background-color: $dark;
     color: $light;
     padding: 90px 90px;
-    
+    display: flex;
 }
 
-.section__title{
-    text-align: center;
-    font-size: $title;
-    margin-top: 0;
-}
 
-.section__list{
-    display: grid;
-    grid-template-columns: repeat(3, 400px );
-    gap: 30px;
-   
-}
+
+
 
 .skill{
     display: flex;
@@ -24,5 +17,4 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
-   
 }

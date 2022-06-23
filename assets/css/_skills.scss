@@ -1,20 +1,23 @@
-
-
-.skills{
-    background-color: $dark;
-    color: $light;
-    padding: 90px 90px;
-    display: flex;
+#skills{
+    padding: 100px;
 }
 
-
-
-
-
-.skill{
+.skills{
+    text-align: center;
+    background-color: $dark;
+    color: $light;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+
+    h1{
+        padding: 0;
+        margin-top: 0;
+    }
+
+&__list{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
 }

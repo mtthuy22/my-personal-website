@@ -75,7 +75,7 @@ ul {
 }
 
 .custom-shape-divider-bottom-1655648853 .shape-fill {
-  fill: #393d3f;
+  fill: #393D3F;
 }
 
 .cover {
@@ -84,7 +84,7 @@ ul {
   height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header_1.png"), no-repeat;
   background-size: 100%;
-  filter: grayscale(1);
+  filter: grayscale(0.5);
   position: relative;
 }
 .cover .txt-animation {
@@ -213,6 +213,32 @@ ul {
   line-height: 100px;
   vertical-align: middle;
   padding: 20px;
+}
+
+#experience {
+  padding: 100px;
+}
+#experience h1 {
+  text-align: center;
+}
+#experience ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 0;
+  gap: 30px;
+}
+
+.experience {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #d7d5da;
+  text-align: center;
+  justify-content: center;
+  padding: 25px 60px;
+}
+.experience__title {
+  font-size: 20px;
 }
 
 .footer {

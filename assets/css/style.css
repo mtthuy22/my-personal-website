@@ -252,6 +252,10 @@ ul {
   background-color: #393D3F;
   color: #F7F5FB;
 }
+.contact a {
+  text-decoration: underline;
+  color: #F7F5FB;
+}
 .contact__heading {
   font-size: 40px;
 }

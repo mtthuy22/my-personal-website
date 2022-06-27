@@ -9,6 +9,11 @@
     background-color: $dark;
     color: $light;
 
+    a {
+        text-decoration: underline;
+        color: $light;
+    }
+
     &__heading{
         font-size: $title;
     }

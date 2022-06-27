@@ -241,6 +241,27 @@ ul {
   font-size: 20px;
 }
 
+#contact {
+  padding: 0 100px;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: #393D3F;
+  color: #F7F5FB;
+}
+.contact__heading {
+  font-size: 40px;
+}
+.contact__subheading {
+  font-size: 20px;
+}
+.contact__small {
+  font-size: 20px;
+}
+
 .footer {
   margin: 0;
   background-color: #393D3F;

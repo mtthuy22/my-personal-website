@@ -1,0 +1,23 @@
+#contact{
+    padding: 0 100px;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark;
+    color: $light;
+
+    &__heading{
+        font-size: $title;
+    }
+
+    &__subheading{
+        font-size: $blocktitle;
+    }
+
+    &__small{
+        font-size: $blocktitle;
+    }
+}

@@ -1,44 +1,47 @@
-#skills{
+#skills {
     padding: 100px;
 }
 
-.skills{
+.skills {
     text-align: center;
-    background-color: $dark;
-    color: $light;
+    background-color: $primary-dark;
+    color: $primary-light;
     display: flex;
     flex-direction: column;
 
-    h1{
+    h1 {
         padding: 0;
         margin-top: 0;
     }
 
-&__list{
+    &__list {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 0;
+    }
+}
+
+.skill {
     display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding-left: 0;
-}
-}
+    grid-template-rows: 100px repeat(2, auto);
+    justify-items: center;
 
-.skill{
-display: grid;
-grid-template-rows: 100px repeat(2,auto);
-justify-items: center;
+    &__icon {
+        height: 100px;
+        width: 100px;
+        background-color: $primary-light;
+        border-radius: 50%;
+        color: $primary-dark;
+        text-align: center;
+        line-height: 100px;
+        vertical-align: middle;
+        padding: 20px;
+    }
 
-
-
-&__icon{
- height: 100px;
- width: 100px;
- background-color: $light;
- border-radius: 50%;
- color: $dark;
- text-align: center;
- line-height: 100px;
- vertical-align:middle;
- padding: 20px;
-}
+    &__desc{
+        padding: 20px;
+        margin:0;
+    }
 }

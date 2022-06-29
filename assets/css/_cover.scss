@@ -17,14 +17,13 @@
 }
 
 .custom-shape-divider-bottom-1655648853 .shape-fill {
-  fill: #393D3F;
-  //fill: #000237;
+ fill: #393D3F;
 }
 
 .cover {
   margin: 0;
   padding: 0;
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url("../img/header_1.png"), no-repeat;
   background-size: 100%;
@@ -56,18 +55,18 @@
   &__title {
     font-size: $title;
     font-weight: bold;
-    color: $light;
+    color: $primary-light;
     margin: 0;
   }
 
   &__text {
     margin: 20px;
     font-size: $subtitle;
-    color: $light;
+    color: $primary-light;
   }
 
   &__btn {
-    background-color: $light;
+    background-color: $primary-light;
     border: none;
     border-radius: 5px;
     padding: 10px 44px;

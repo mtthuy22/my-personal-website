@@ -1,7 +1,6 @@
 //Colors
-$dark: #393D3F;
-//$dark: #000237;
-$light: #F7F5FB;
+$primary-dark: #393D3F;
+$primary-light: #F7F5FB;
 $active: #909090;
 //$active: #c76868;
 $block: #d7d5da;
@@ -12,3 +11,7 @@ $text: 16px;
 $title: 40px;
 $subtitle: 32px;
 $blocktitle: 20px;
+
+//viewport
+$desktop: 1100px;
+$tablet: 640px;

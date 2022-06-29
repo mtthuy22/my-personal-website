@@ -6,12 +6,12 @@
 .contact {
     display: flex;
     justify-content: space-between;
-    background-color: $dark;
-    color: $light;
+    background-color: $primary-dark;
+    color: $primary-light;
 
     a {
         text-decoration: underline;
-        color: $light;
+        color: $primary-light;
     }
 
     &__heading{

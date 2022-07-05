@@ -9,13 +9,6 @@
     align-items: center;
     gap: 2em;
 
-    @media (max-width: $smaller-screen){
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-
     &__info {
         width: 630px;
         height: 50vh;
@@ -44,12 +37,7 @@
         img{
             margin: auto;
         }
-        @media (max-width:$smaller-screen) {
-            height: auto;
-            img {
-                border-radius: 50%;
-            }
-        }
+       
     }
 
     &__text {

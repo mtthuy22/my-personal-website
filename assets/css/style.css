@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #F7F5FB;
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -28,7 +28,7 @@ ul {
 }
 
 .section__title {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .header {
@@ -117,14 +117,14 @@ ul {
   height: 100%;
 }
 .cover__title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #F7F5FB;
   margin: 0;
 }
 .cover__text {
   margin: 20px;
-  font-size: 32px;
+  font-size: 2rem;
   color: #F7F5FB;
   text-align: center;
 }
@@ -134,7 +134,7 @@ ul {
   border-radius: 5px;
   padding: 10px 44px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -151,6 +151,7 @@ ul {
 #about {
   padding: 100px;
   margin: 20px;
+  width: 100vw;
 }
 
 .about {
@@ -160,8 +161,7 @@ ul {
   gap: 2em;
 }
 .about__info {
-  width: 630px;
-  height: 50vh;
+  width: 34%;
   display: flex;
   flex-direction: column;
 }
@@ -177,17 +177,36 @@ ul {
   color: #393D3F;
 }
 .about__img {
-  height: 50vh;
-  padding-top: 50px;
-}
-.about__img img {
-  margin: auto;
+  height: 16rem;
+  padding-top: 2rem;
 }
 .about__text {
   text-align: justify;
   text-justify: inter-word;
 }
 
+@media only screen and (max-width: 640px) {
+  .about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 0;
+  }
+  .about__img img {
+    width: 30%;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .about__info {
+    width: 100%;
+    text-align: center;
+  }
+}
 #skills {
   padding: 100px;
 }
@@ -255,7 +274,7 @@ ul {
   padding: 25px 60px;
 }
 .experience__title {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #contact {
@@ -274,13 +293,13 @@ ul {
   color: #F7F5FB;
 }
 .contact__heading {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .contact__subheading {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .contact__small {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .footer {

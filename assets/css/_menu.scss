@@ -1,10 +1,12 @@
+
 .header {
-    width: 100%;
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     background-color: $primary-dark;
     padding: 10px 40px;
-
+    z-index: 100;
 }
 
 .menu {

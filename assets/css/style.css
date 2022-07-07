@@ -32,11 +32,13 @@ ul {
 }
 
 .header {
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   background-color: #393D3F;
   padding: 10px 40px;
+  z-index: 100;
 }
 
 .menu__list {
@@ -137,6 +139,15 @@ ul {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 640px) {
+  .cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  }
+
+  .custom-shape-divider-bottom-1655648853 {
+    display: none;
+  }
+}
 #about {
   padding: 100px;
   margin: 20px;

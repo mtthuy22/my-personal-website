@@ -75,5 +75,15 @@
     cursor: pointer;
     margin-top: 20px;
   }
-
 }
+
+@media only screen and (max-width: $mobile){
+  .cover{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  }
+
+  .custom-shape-divider-bottom-1655648853{
+    display: none;
+  }
+}
+ 

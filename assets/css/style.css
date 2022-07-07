@@ -206,6 +206,13 @@ ul {
     width: 100%;
     text-align: center;
   }
+  .about__social {
+    display: flex;
+    justify-content: center;
+  }
+  .about__text {
+    text-align: justify;
+  }
 }
 #skills {
   padding: 100px;

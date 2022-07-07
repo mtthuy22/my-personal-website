@@ -198,7 +198,7 @@ ul {
     padding: 0;
   }
   .about__img img {
-    width: 30%;
+    width: 30vh;
     border-radius: 50%;
     margin: auto;
   }

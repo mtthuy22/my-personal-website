@@ -28,13 +28,3 @@
     }
 }
 
-@media only screen and (max-width: $mobile){
-    ul{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .experience{
-        min-width: 18rem;
-    }
-}

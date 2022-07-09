@@ -197,22 +197,23 @@ section {
   }
   .about__img {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     height: auto;
     padding: 0;
+    align-self: flex-start;
   }
   .about__img img {
-    width: 30vh;
+    width: 25vh;
     border-radius: 50%;
     margin: auto;
   }
   .about__info {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .about__social {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   .about__text {
     text-align: justify;
@@ -300,16 +301,6 @@ section {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 640px) {
-  ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .experience {
-    min-width: 18rem;
-  }
-}
 #contact {
   padding: 0 100px;
   margin: 0;

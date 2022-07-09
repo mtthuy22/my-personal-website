@@ -27,6 +27,10 @@ ul {
   list-style-type: none;
 }
 
+section {
+  max-width: 100vw;
+}
+
 .section__title {
   font-size: 2.5rem;
 }
@@ -151,7 +155,7 @@ ul {
 #about {
   padding: 100px;
   margin: 20px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .about {
@@ -258,6 +262,17 @@ ul {
   margin: 0;
 }
 
+@media only screen and (max-width: 640px) {
+  .skills {
+    padding: 10%;
+  }
+  .skills__list {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2em;
+  }
+}
 #experience {
   padding: 100px;
 }
@@ -265,25 +280,36 @@ ul {
   text-align: center;
 }
 #experience ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
   padding-left: 0;
   gap: 30px;
 }
 
 .experience {
-  height: 300px;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   background-color: #d7d5da;
   text-align: center;
   justify-content: center;
-  padding: 25px 60px;
+  padding: 1.8rem 3.75rem;
 }
 .experience__title {
   font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 640px) {
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .experience {
+    min-width: 18rem;
+  }
+}
 #contact {
   padding: 0 100px;
   margin: 0;

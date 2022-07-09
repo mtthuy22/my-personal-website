@@ -6,26 +6,35 @@
     }
 
     ul {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
+       /* display: grid;
+       grid-template-columns: repeat(3, 1fr); */
+       display: flex;
        padding-left: 0;
        gap: 30px;
     }
 }
 
 .experience{
-    height: 300px;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column ;
     background-color: $block;
     text-align: center;
     justify-content: center;
-    padding: 25px 60px;
+    padding: 1.8rem 3.75rem;
 
     &__title{
         font-size: $blocktitle;
     }
 }
 
+@media only screen and (max-width: $mobile){
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
 
-
+    .experience{
+        min-width: 18rem;
+    }
+}

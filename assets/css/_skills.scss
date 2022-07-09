@@ -45,3 +45,17 @@
         margin:0;
     }
 }
+
+@media only screen and (max-width:$mobile){
+    .skills{ 
+       padding: 10%;
+
+       &__list{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 2em;
+       }
+
+    }
+}

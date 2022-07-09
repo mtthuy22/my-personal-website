@@ -1,6 +1,6 @@
 #about {
-    padding: 100px;
-    margin: 20px;
+    padding: 6rem;
+    margin: 1.25rem;
     /* width: 100vw; */
 }
 
@@ -47,6 +47,7 @@
         width: 100vw;
         display: flex;
         flex-direction: column;
+        padding: 10rem;
 
         &__img {
             display: flex;

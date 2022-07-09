@@ -153,8 +153,8 @@ section {
   }
 }
 #about {
-  padding: 100px;
-  margin: 20px;
+  padding: 6rem;
+  margin: 1.25rem;
   /* width: 100vw; */
 }
 
@@ -194,6 +194,7 @@ section {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding: 10rem;
   }
   .about__img {
     display: flex;

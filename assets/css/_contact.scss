@@ -5,6 +5,7 @@
 
 .contact {
     display: flex;
+    flex: 1 1 0;
     justify-content: space-between;
     background-color: $primary-dark;
     color: $primary-light;
@@ -15,14 +16,32 @@
     }
 
     &__heading{
-        font-size: $title;
+        font-size:xx-large;
     }
 
     &__subheading{
-        font-size: $blocktitle;
+        font-size: larger;
+        margin: 0.5em;
     }
 
-    &__small{
-        font-size: $blocktitle;
+    &__text{
+        font-size: $text;
+        margin: 0.5;
+    }
+
+}
+
+@media only screen and (max-width: $mobile){
+    .contact{
+        display: flex;
+        flex-direction: column;
+
+        &__item{
+            text-align: center;
+        }
+
+
+        
     }
 }
+

@@ -1,5 +1,6 @@
 #experience {
-    padding: 100px;
+     padding: 100px;
+     text-align: center;
     
     h1{
         text-align: center;
@@ -15,7 +16,7 @@
 }
 
 .experience{
-    flex: 1 1 0;
+    flex: 1 1 0; 
     display: flex;
     flex-direction: column ;
     background-color: $block;
@@ -29,12 +30,12 @@
 }
 
 @media only screen and (max-width: $mobile){
-    #experience ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .experience{
-        flex-grow: 1;
+    #experience {
+        padding: 6rem 1em;
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

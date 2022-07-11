@@ -35,6 +35,11 @@ section {
   font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 0.85rem;
+  }
+}
 .header {
   position: fixed;
   width: 100vw;
@@ -184,13 +189,12 @@ section {
   height: 16rem;
   padding-top: 2rem;
 }
-.about__text {
-  text-align: justify;
-  text-justify: inter-word;
-}
 
 @media only screen and (max-width: 640px) {
   .about {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -286,7 +290,7 @@ section {
   grid-template-columns: repeat(3, 1fr); */
   display: flex;
   padding-left: 0;
-  gap: 30px;
+  gap: 1.2rem;
 }
 
 .experience {
@@ -302,6 +306,16 @@ section {
   font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 640px) {
+  #experience ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience {
+    flex-grow: 1;
+  }
+}
 #contact {
   padding: 0 100px;
   margin: 0;

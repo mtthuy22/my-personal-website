@@ -10,7 +10,7 @@
        grid-template-columns: repeat(3, 1fr); */
        display: flex;
        padding-left: 0;
-       gap: 30px;
+       gap: 1.2rem;
     }
 }
 
@@ -28,3 +28,13 @@
     }
 }
 
+@media only screen and (max-width: $mobile){
+    #experience ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience{
+        flex-grow: 1;
+    }
+}

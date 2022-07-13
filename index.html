@@ -1,213 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <title>Hi, I am Thuy</title>
+    <script
+      src="https://kit.fontawesome.com/923d045525.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets\css\style.css" />
-  <title>Hi, I am Thuy</title>
-  <script src="https://kit.fontawesome.com/923d045525.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!-----------HEADER------------------>
 
-<body>
-  <!-----------HEADER------------------>
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#home">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">Profile</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#skills">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#experience">Experience</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="header">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#home">Home</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#about">Profile</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#skills">Skills</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#experience">Experience</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!--COVER IMAGE-->
-  <section id="home">
-    <div class="cover">
-      <div class="custom-shape-divider-bottom-1655648853">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
-      </div>
-
-      <div class="cover__content txt-animation">
-        <h1 class="cover__title">Hi, I am Thuy</h1>
-        <p class="cover__text">Junior Web & FE developer</p>
-        <a class="cover__link" target="_blank" href="https://resume.io/r/NillTxxz9">
-          <button class="cover__btn">Full CV download</button></a>
-      </div>
-    </div>
-  </section>
-
-  <!--=========== MAIN CONTENT STARTS HERE ============ -->
-  <main class="content">
-    <!--about-->
-    <section id="about" class="about">
-
-      <div class="about__img">
-        <img src="assets/img/me_photo.jpg" alt="profile-pic" />
-      </div>
-      <div class="about__info">
-        <h1 class="section__title">About</h1>
-        <h4>Aspiring web and front-end developer</h4>
-        <div class="about__text">
-          <p>I am Thuy, a web & FE developer based in Czechia.</p>
-          <p>
-            I have worked in multiple industries background and I started my
-            complete career transition towards IT field in later 2020 with
-            focus on web and front-end development. These days my time is
-            spent on deep diving into front-end technologies, trends and
-            coding my own projects.
-          </p>
-          <p>
-            Outside my work, you will likely find me roaming around with
-            longboard, drawing on graphic tablet, travelling and spending time
-            with my friends and family.
-          </p>
+    <!--COVER IMAGE-->
+    <section id="home">
+      <div class="cover">
+        <div class="custom-shape-divider-bottom-1655648853">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
-        <div class="about__social">
+
+        <div class="cover__content txt-animation">
+          <h1 class="cover__title">Hi, I am Thuy</h1>
+          <p class="cover__text">Junior Web & FE developer</p>
+          <a
+            class="cover__link"
+            target="_blank"
+            href="https://resume.io/r/NillTxxz9"
+          >
+            <button class="cover__btn">Full CV download</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--=========== MAIN CONTENT STARTS HERE ============ -->
+    <main class="content">
+      <!--about-->
+      <section id="about" class="about">
+        <div class="about__img">
+          <img src="assets/img/me_photo.jpg" alt="profile-pic" />
+        </div>
+        <div class="about__info">
+          <h1 class="section__title">About</h1>
+          <h4>Aspiring web and front-end developer</h4>
+          <div class="about__text">
+            <p>I am Thuy, a web & FE developer based in Czechia.</p>
+            <p>
+              I have worked in multiple industries background and I started my
+              complete career transition towards IT field in later 2020 with
+              focus on web and front-end development. These days my time is
+              spent on deep diving into front-end technologies, trends and
+              coding my own projects.
+            </p>
+            <p>
+              Outside my work, you will likely find me roaming around with
+              longboard, drawing on graphic tablet, travelling and spending time
+              with my friends and family.
+            </p>
+          </div>
           <div class="about__social">
-            <a href="https://www.linkedin.com/in/tthuymai/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-            <a href="https://github.com/mtthuy22"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <div class="about__social">
+              <a href="https://www.linkedin.com/in/tthuymai/"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+              <a href="https://github.com/mtthuy22"
+                ><i class="fa-brands fa-github fa-2xl"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-    </section>
+      <!--skills -->
 
-    <!--skills -->
+      <section id="skills" class="skills">
+        <h1 class="section__title">Skills</h1>
+        <ul class="section__list skills__list">
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-brands fa-html5 fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">HTML</h4>
+              <p class="skill__text">
+                Semantic HTML elements, tables, lists, BEM methodology
+              </p>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-brands fa-css3-alt fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">CSS</h4>
+              <p class="skill__text">
+                Grid, flexbox, Sass/SCSS preprocessor, basics of responsive
+                design
+              </p>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-brands fa-js fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">Javascript</h4>
+              <p class="skill__text">
+                Basic knowledge of JavaScript, working with functions, arrays,
+                DOM
+              </p>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-brands fa-react fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">JS Frameworks</h4>
+              <p class="skill__text">
+                React.js - basics, components, reading API data, useState and
+                useEffect hooks <br />
+                Vue.js - Basic theoretical knowledge
+              </p>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-solid fa-globe fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">Multilingual</h4>
+              <p class="skill__text">
+                English - full proficiency<br />
+                French - intermediate <br />Japanese - elementary <br />
+                Czech, Vietnamese - native speaker
+              </p>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="skill__icon">
+              <i class="fa-solid fa-ellipsis fa-4x"></i>
+            </div>
+            <div class="skill__desc">
+              <h4 class="skill__title">Other</h4>
+              <p class="skill__text">
+                Photoshop, InDesign basics, Digital illustration, Accounting
+                software
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <section id="skills" class="skills">
-      <h1 class="section__title">Skills</h1>
-      <ul class="section__list skills__list">
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-brands fa-html5 fa-4x"></i>
-          </div>
-          <h4 class="skill__title">HTML</h4>
-          <p class="skill__desc">
-            Semantic HTML elements, tables, lists, BEM methodology
-          </p>
-        </li>
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-brands fa-css3-alt fa-4x"></i>
-          </div>
-          <h4 class="skill__title">CSS</h4>
-          <div class="skill__desc">
-            Grid, flexbox, Sass/SCSS preprocessor, basics of responsive design
-          </div>
-        </li>
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-brands fa-js fa-4x"></i>
-          </div>
-          <h4 class="skill__title">Javascript</h4>
+      <!-- Experience-->
 
-          <p class="skill__desc">
-            Basic knowledge of JavaScript, working with functions, arrays, DOM
-          </p>
-        </li>
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-brands fa-react fa-4x"></i>
-          </div>
-          <h4 class="skill__title">JS Frameworks</h4>
-          <p class="skill__desc">
-            React.js - basics, components, reading API data, useState and
-            useEffect hooks <br />
-            Vue.js - Basic theoretical knowledge
-          </p>
-        </li>
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-solid fa-globe fa-4x"></i>
-          </div>
-          <h4 class="skill__title">Multilingual</h4>
-          <p class="skill__desc">
-            English - full proficiency<br />
-            French - intermediate <br />Japanese - elementary <br />
-            Czech, Vietnamese - native speaker
-          </p>
-        </li>
-        <li class="skill">
-          <div class="skill__icon">
-            <i class="fa-solid fa-ellipsis fa-4x"></i>
-          </div>
-          <h4 class="skill__title">Other</h4>
-          <p class="skill__desc">
-            Photoshop, InDesign basics, Digital illustration, Accounting
-            software
-          </p>
-        </li>
-      </ul>
-    </section>
+      <section id="experience">
+        <h1 class="section__title">Experience</h1>
+        <ul class="section__list">
+          <li class="experience">
+            <h4 class="experience__title">Goodwill Housing s.r.o.</h4>
+            <div class="experience__text">
+              <p>Business manager</p>
+              <p>2017 - present</p>
+            </div>
+          </li>
+          <li class="experience">
+            <h4 class="experience__title">Fox Hunter s.r.o.</h4>
+            <div class="experience__text">
+              <p>Project specialist</p>
+              <p>2015 - 2017</p>
+            </div>
+          </li>
+          <li class="experience">
+            <h4 class="experience__title">AC&C Public Relations s.r.o.</h4>
+            <div class="experience__text">
+              <p>Account executive</p>
+              <p>2014 - 2015</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Experience-->
-
-    <section id="experience">
-      <h1 class="section__title">Experience</h1>
-      <ul class="section__list">
-        <li class="experience">
-          <h4 class="experience__title">Goodwill Housing s.r.o.</h4>
-          <div class="experience__text">
-            <p>Business manager</p>
-            <p>2017 - present</p>
-          </div>
-        </li>
-        <li class="experience">
-          <h4 class="experience__title">Fox Hunter s.r.o.</h4>
-          <div class="experience__text">
-            <p>Project specialist</p>
-            <p>2015 - 2017</p>
-          </div>
-        </li>
-        <li class="experience">
-          <h4 class="experience__title">AC&C Public Relations s.r.o.</h4>
-          <div class="experience__text">
-            <p>Account executive</p>
-            <p>2014 - 2015</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <div class="contact__item">
-        <p class="contact__heading">Thanks for scrolling!</p>
-        <p class="contact__subheading">Thu Thuy Mai</p>
-        <p class="contact__subheading">Junior Web & FE developer</p>
-      </div>
-      <div class="contact__item">
-        <p class="contact__heading">Contact me</p>
-        <a href="mailto:mai.thuthuy91@gmail.com" class="contact__text">mai.thuthuy91@gmail.com</a>
-        <p class="contact__text">+420 724 966 657</p>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; Thu Thuy Mai 2022</p>
-  </footer>
-</body>
-
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="contact__item">
+          <p class="contact__heading">Thanks for scrolling!</p>
+          <p class="contact__subheading">Thu Thuy Mai</p>
+          <p class="contact__subheading">Junior Web & FE developer</p>
+        </div>
+        <div class="contact__item">
+          <p class="contact__heading">Contact me</p>
+          <a href="mailto:mai.thuthuy91@gmail.com" class="contact__text"
+            >mai.thuthuy91@gmail.com</a
+          >
+          <p class="contact__text">+420 724 966 657</p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Thu Thuy Mai 2022</p>
+    </footer>
+  </body>
 </html>

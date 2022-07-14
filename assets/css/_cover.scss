@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-position: 40% 60%;
   filter: grayscale(0.5);
   position: relative;
 
@@ -77,6 +78,13 @@
   }
 }
 
+
+@media only screen and (max-width: $smaller-devices){
+  .cover{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: $mobile){
   .cover{
    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
@@ -84,6 +92,12 @@
 
   .custom-shape-divider-bottom-1655648853{
     display: none;
+  }
+}
+
+@media only screen and (max-width: $tablet){
+  .cover{
+    background-position: 30% 70%;
   }
 }
  

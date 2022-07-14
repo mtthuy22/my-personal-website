@@ -1,76 +1,94 @@
 #about {
-    padding: 6rem;
-    margin: 1.25rem;
-    /* width: 100vw; */
+  padding: 6rem;
+  margin: 1.25rem;
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  &__info {
+    width: 34%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    h1,
+    h4 {
+      margin-top: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 0.5em;
+
+    .fa-brands {
+      color: $primary-dark;
+    }
+  }
+
+  &__cv {
+    display: none;
+  }
+
+  &__img {
+    height: 16rem;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: $smaller-devices) {
+  #about {
+    margin: 0;
+    padding: 6rem 3rem;
+  }
+
+  .about__social {
     align-items: center;
-    gap: 2em;
+  }
+
+  .about__cv{
+    display: block;
+    height: 1.8em;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .about {
+    min-width: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+
+    &__img {
+      display: flex;
+      justify-content: left;
+      height: auto;
+      padding: 0;
+      align-self: flex-start;
+
+      img {
+        width: 25vh;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
 
     &__info {
-        width: 34%;
-        display: flex;
-        flex-direction: column;
-
-        h1,
-        h4 {
-            margin-top: 0;
-        }
+      width: 100%;
+      text-align: left;
     }
 
     &__social {
-        display: flex;
-        gap: 0.5em;
-
-        a .fa-brands {
-            color: $primary-dark;
-        }
+      display: flex;
+      justify-content: left;
     }
 
-    &__img {
-        height: 16rem;
-        padding-top: 2rem;
-
+    &__text {
+      text-align: justify;
     }
-}
-
-@media only screen and (max-width:$tablet) {
-    .about {
-        min-width: fit-content;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        padding: 10rem;
-
-        &__img {
-            display: flex;
-            justify-content: left;
-            height: auto;
-            padding: 0;
-            align-self: flex-start;
-
-            img {
-                width: 25vh;
-                border-radius: 50%;
-                margin: auto;
-            }
-        }
-
-        &__info {
-            width: 100%;
-            text-align: left;
-        }
-
-        &__social{
-            display: flex;
-            justify-content: left;
-        }
-
-        &__text{
-            text-align: justify;
-        }
-    }
+  }
 }

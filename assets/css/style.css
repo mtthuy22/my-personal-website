@@ -35,7 +35,7 @@ section {
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   body {
     font-size: 0.85rem;
     overflow-x: hidden;
@@ -96,6 +96,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-position: 40% 60%;
   filter: grayscale(0.5);
   position: relative;
 }
@@ -151,16 +152,25 @@ section {
 
 @media only screen and (max-width: 480px) {
   .cover {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
   }
   .custom-shape-divider-bottom-1655648853 {
     display: none;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .cover {
+    background-position: 30% 70%;
+  }
+}
 #about {
   padding: 6rem;
   margin: 1.25rem;
-  /* width: 100vw; */
 }
 
 .about {
@@ -182,15 +192,31 @@ section {
   display: flex;
   gap: 0.5em;
 }
-.about__social a .fa-brands {
+.about__social .fa-brands {
   color: #393D3F;
+}
+.about__cv {
+  display: none;
 }
 .about__img {
   height: 16rem;
   padding-top: 2rem;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 480px) {
+  #about {
+    margin: 0;
+    padding: 6rem 3rem;
+  }
+  .about__social {
+    align-items: center;
+  }
+  .about__cv {
+    display: block;
+    height: 1.8em;
+  }
+}
+@media only screen and (max-width: 1100px) {
   .about {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
@@ -278,7 +304,7 @@ section {
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .skills {
     padding: 10%;
   }
@@ -289,7 +315,7 @@ section {
     gap: 2em;
   }
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1100px) {
   .skills {
     padding: 10%;
   }
@@ -327,7 +353,7 @@ section {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   #experience {
     padding: 6rem 1em;
   }
@@ -364,7 +390,7 @@ section {
   margin: 0.5;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .contact {
     display: flex;
     flex-direction: column;

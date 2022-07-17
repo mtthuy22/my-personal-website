@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *,
 ::before,
@@ -14,6 +15,7 @@ body {
   background-color: $primary-light;
   font-size: $text;
   position: relative;
+  overflow-x: hidden;
 }
 
 main{

@@ -1,14 +1,11 @@
 #experience {
-     padding: 100px;
-     text-align: center;
+     padding: 6rem;
     
     h1{
         text-align: center;
     }
 
     ul {
-       /* display: grid;
-       grid-template-columns: repeat(3, 1fr); */
        display: flex;
        padding-left: 0;
        gap: 1.2rem;
@@ -31,11 +28,26 @@
 
 @media only screen and (max-width: $mobile){
     #experience {
-        padding: 6rem 1em;
+        padding: 1rem;
     
         ul {
             display: flex;
             flex-direction: column;
         }
     }
+}
+
+@media only screen and (max-width: $tablet){
+#experience {
+    padding: 6rem; 
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.experience{
+    min-width: 30vw;
+    min-height: 20vh;
+    flex: 0 0 33.3333%;
+}
 }

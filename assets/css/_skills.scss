@@ -16,7 +16,6 @@
 
     &__list {
         display: grid;
-        grid-auto-flow: row;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding-left: 0;
@@ -55,23 +54,20 @@
 
     &__text{
         margin-top: 0.5rem;
-    }
-
-  
+    } 
 }
 
-@media only screen and (max-width:$mobile){
-    .skills{ 
-       padding: 10%;
+@media only screen and (max-width:$smaller-devices){
+   .skills {
+    padding: 10%;
+    width: 100vw;
 
-       &__list{
+    &__list{
         display: flex;
         flex-direction: column;
-        margin: auto;
         gap: 2em;
-       }
-
     }
+   } 
 }
 
 @media only screen and (max-width: $tablet){
@@ -79,7 +75,6 @@
         padding: 10%;
 
         &__list{
-            display: grid;
             grid-template-columns: repeat(2, auto);
             gap: 2em;
         }

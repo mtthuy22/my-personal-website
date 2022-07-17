@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -15,6 +16,7 @@ body {
   background-color: #F7F5FB;
   font-size: 1rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 main {
@@ -216,9 +218,12 @@ section {
     display: none;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1025px) {
   .cover {
     background-position: 30% 70%;
+  }
+  .custom-shape-divider-bottom-1655648853 {
+    display: none;
   }
 }
 #about {
@@ -260,6 +265,7 @@ section {
   #about {
     margin: 0;
     padding: 6rem 3rem;
+    width: 100vw;
   }
   .about__social {
     align-items: center;
@@ -269,7 +275,7 @@ section {
     height: 1.8em;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1025px) {
   .about {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
@@ -320,7 +326,6 @@ section {
 }
 .skills__list {
   display: grid;
-  grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding-left: 0;
@@ -357,37 +362,33 @@ section {
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
   .skills {
     padding: 10%;
+    width: 100vw;
   }
   .skills__list {
     display: flex;
     flex-direction: column;
-    margin: auto;
     gap: 2em;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1025px) {
   .skills {
     padding: 10%;
   }
   .skills__list {
-    display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 2em;
   }
 }
 #experience {
-  padding: 100px;
-  text-align: center;
+  padding: 6rem;
 }
 #experience h1 {
   text-align: center;
 }
 #experience ul {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   display: flex;
   padding-left: 0;
   gap: 1.2rem;
@@ -408,11 +409,25 @@ section {
 
 @media only screen and (max-width: 640px) {
   #experience {
-    padding: 6rem 1em;
+    padding: 1rem;
   }
   #experience ul {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #experience {
+    padding: 6rem;
+  }
+  #experience ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .experience {
+    min-width: 30vw;
+    min-height: 20vh;
+    flex: 0 0 33.3333%;
   }
 }
 #contact {

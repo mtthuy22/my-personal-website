@@ -66,6 +66,10 @@
         flex-direction: column;
         height: 1.5rem;
 
+        &__home{
+            display: none;
+        }
+
         .toggle-btn {
             display: flex;
         }

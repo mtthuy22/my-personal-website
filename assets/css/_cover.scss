@@ -6,6 +6,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  filter: opacity(50%);
 }
 
 .custom-shape-divider-bottom-1655648853 svg {
@@ -16,10 +17,6 @@
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1655648853 .shape-fill {
- fill: #393D3F;
-}
-
 .cover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url("../img/header_1.png");
@@ -27,8 +24,13 @@
   background-size: cover;
   height: 100vh;
   background-position: 40% 60%;
-  filter: grayscale(0.5);
+  filter: saturate(20%);
   position: relative;
+
+  &:hover {
+    filter: saturate(80%);
+    transition: 3ms;
+  }
 
   .txt-animation {
     animation: animation 2s ease-out;
@@ -36,11 +38,11 @@
 
   @keyframes animation {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
 
     100% {
-        opacity: 1;
+      opacity: 1;
     }
   }
 
@@ -78,30 +80,18 @@
   }
 }
 
-
-@media only screen and (max-width: $smaller-devices){
-  .cover{
+@media only screen and (max-width: $smaller-devices) {
+  .cover {
     display: none;
   }
 }
 
-@media only screen and (max-width: $mobile){
-  .cover{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-  }
-
-  .custom-shape-divider-bottom-1655648853{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: $tablet){
-  .cover{
+@media only screen and (max-width: $tablet) {
+  .cover {
     background-position: 30% 70%;
   }
 
-  .custom-shape-divider-bottom-1655648853{
+  .custom-shape-divider-bottom-1655648853 {
     display: none;
   }
 }
- 

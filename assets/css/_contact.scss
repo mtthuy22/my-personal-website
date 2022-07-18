@@ -1,5 +1,5 @@
 #contact{
-    padding: 0 100px;
+    padding: 0 5rem;;
     margin: 0;
 }
 
@@ -17,6 +17,7 @@
 
     &__heading{
         font-size:xx-large;
+        margin-bottom: 1rem;
     }
 
     &__subheading{
@@ -31,17 +32,13 @@
 
 }
 
-@media only screen and (max-width: $mobile){
+@media only screen and (max-width: $tablet){
     .contact{
-        display: flex;
         flex-direction: column;
 
         &__item{
             text-align: center;
-        }
-
-
-        
+        }    
     }
 }
 

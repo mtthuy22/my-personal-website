@@ -3,6 +3,7 @@
     
     h1{
         text-align: center;
+        margin: 2rem 0;
     }
 
     ul {
@@ -40,14 +41,14 @@
 @media only screen and (max-width: $tablet){
 #experience {
     padding: 6rem; 
+    width: 100vw;
+    
     ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 .experience{
-    min-width: 30vw;
-    min-height: 20vh;
-    flex: 0 0 33.3333%;
+    flex: 0 1 33.3333%;
 }
 }

@@ -6,10 +6,12 @@ const menuLink = document.querySelectorAll(".menu__link");
 
 toggleBtn.addEventListener('click', () => {
   menuList.classList.toggle('active');
+  toggleBtn.classList.toggle('active');
 });
 
 menuLink.forEach( n => n.addEventListener('click', closeMenu));
 
 function closeMenu() {
     menuList.classList.remove('active');
+    toggleBtn.classList.remove('active');
 }

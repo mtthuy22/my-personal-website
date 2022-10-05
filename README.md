@@ -1,2 +1,5 @@
 # my-personal-website
-my personal webpage
+My personal webpage
+
+Live at: 
+https://thuycodes.netlify.app/

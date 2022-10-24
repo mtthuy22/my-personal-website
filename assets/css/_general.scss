@@ -36,6 +36,10 @@ section{
 font-size: $title;
 }
 
+.section__list{
+  padding-left: 0;
+}
+
 @media only screen and (max-width: $mobile){
   body{
     font-size: 0.85rem;

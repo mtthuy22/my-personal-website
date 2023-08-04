@@ -1,0 +1,5 @@
+/.vscode
+
+#SCSS partials
+*.scss
+!style.scss

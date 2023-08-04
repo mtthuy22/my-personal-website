@@ -172,16 +172,7 @@ section {
   transition: 3ms;
 }
 .cover .txt-animation {
-  -webkit-animation: animation 2s ease-out;
-          animation: animation 2s ease-out;
-}
-@-webkit-keyframes animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: animation 2s ease-out;
 }
 @keyframes animation {
   0% {
@@ -285,7 +276,6 @@ section {
 }
 @media only screen and (max-width: 1025px) {
   .about {
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
     width: 100vw;

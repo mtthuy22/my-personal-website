@@ -1,0 +1,82 @@
+#skills {
+    padding: 100px;
+}
+
+.skills {
+    display: flex;
+    text-align: center;
+    background-color: $primary-dark;
+    color: $primary-light;
+    flex-direction: column;
+
+    h1 {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 0;
+    }
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 0.25rem;
+    flex: 1 1 0;
+
+    &__icon {
+        height: 100px;
+        width: 100px;
+        background-color: $primary-light;
+        border-radius: 50%;
+        color: $primary-dark;
+        text-align: center;
+        line-height: 100px;
+        vertical-align: middle;
+        padding: 20px;
+    }
+
+    &__desc{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+    }
+
+    &__title{
+        margin-bottom: 0;
+    }
+
+    &__text{
+        margin-top: 0.5rem;
+    } 
+}
+
+@media only screen and (max-width:$smaller-devices){
+   .skills {
+    padding: 10%;
+    width: 100vw;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+   } 
+}
+
+@media only screen and (max-width: $tablet){
+    .skills{
+        padding: 10%;
+
+        &__list{
+            grid-template-columns: repeat(2, auto);
+            gap: 2em;
+        }
+    }
+}

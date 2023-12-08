@@ -1,0 +1,54 @@
+#experience {
+     padding: 6rem;
+    
+    h1{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    ul {
+       display: flex;
+       padding-left: 0;
+       gap: 1.2rem;
+    }
+}
+
+.experience{
+    flex: 1 1 0; 
+    display: flex;
+    flex-direction: column ;
+    background-color: $block;
+    text-align: center;
+    justify-content: center;
+    padding: 1.8rem 3.75rem;
+
+    &__title{
+        font-size: $blocktitle;
+    }
+}
+
+@media only screen and (max-width: $mobile){
+    #experience {
+        padding: 1rem;
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet){
+#experience {
+    padding: 6rem; 
+    width: 100vw;
+    
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.experience{
+    flex: 0 1 33.3333%;
+}
+}

@@ -159,7 +159,7 @@ section {
 }
 
 .cover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header_1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

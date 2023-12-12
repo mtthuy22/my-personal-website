@@ -73,6 +73,8 @@ section {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  background-color: transparent;
+  border: none;
 }
 .menu .bar {
   width: 100%;
@@ -115,7 +117,7 @@ section {
     display: flex;
   }
   .menu .toggle-btn.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(-45deg);
+    transform: translateY(7px) rotate(-45deg);
   }
   .menu .toggle-btn.active .bar:nth-child(2) {
     opacity: 0;

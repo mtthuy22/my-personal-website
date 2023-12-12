@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
 
+
   .toggle-btn {
     position: absolute;
     right: 0.5rem;
@@ -23,6 +24,8 @@
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    background-color: transparent;
+    border: none;
   }
 
   .bar {
@@ -73,7 +76,7 @@
       display: flex;
 
       &.active .bar:nth-child(1){
-        transform: translateY(9px) rotate(-45deg);
+        transform: translateY(7px) rotate(-45deg);
       }
       &.active .bar:nth-child(2){
         opacity: 0;

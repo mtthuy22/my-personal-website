@@ -6,11 +6,11 @@
         margin: 2rem 0;
     }
 
-    ul {
+    .section__list {
        display: flex;
        padding-left: 0;
        gap: 1.2rem;
-    }
+    } 
 }
 
 .experience{
@@ -31,7 +31,7 @@
     #experience {
         padding: 1rem;
     
-        ul {
+        .section__list {
             display: flex;
             flex-direction: column;
         }
@@ -43,7 +43,7 @@
     padding: 6rem; 
     width: 100vw;
     
-    ul {
+    .section__list {
         flex-wrap: wrap;
         justify-content: center;
     }

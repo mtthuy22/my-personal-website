@@ -1,18 +1,17 @@
-# Description
+# My personal webpage
 
-<h1>My personal webpage</h1>
+### Created with:
+- HTML
+- Sass/SCSS
+- JavaScript
 
 Live at:
 https://thuycodes.netlify.app/
 
-<h2> SASS </h2>
+## Sass installation 
 
-### Install SASS and node modules
+1. Prerequisites: Node.js, npm 
+2. Run `npm ci` 
 
-### `npm install`
-
-### Compile SASS
-
-### `npm run compile:scss`
-
-Watches for changes in .scss and compiles to .css.
+## Usage 
+ You can use  `npm run compile:scss` to watch for changes and for compiling style.scss to style.css. 

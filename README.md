@@ -1,6 +1,6 @@
 # Description
 
-<h1>>My personal webpage</h1>
+<h1>My personal webpage</h1>
 
 Live at:
 https://thuycodes.netlify.app/

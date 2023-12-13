@@ -64,6 +64,10 @@ section {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  /*  &__item {
+     display: block;
+     padding: 0 1rem;
+   } */
 }
 .menu .toggle-btn {
   position: absolute;
@@ -87,15 +91,14 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.menu__item {
-  display: block;
-  padding: 0 1rem;
+  margin: 1em 0;
 }
 .menu__link {
   color: #F7F5FB;
   text-decoration: none;
   font-size: larger;
+  display: block;
+  padding: 0 1rem;
 }
 .menu__link:hover {
   color: #909090;

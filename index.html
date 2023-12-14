@@ -23,7 +23,7 @@
 
     <header class="header">
       <nav class="menu">
-        <div class="menu__list">
+        <div class="menu__list" id="menuList">
           <a class="menu__link menu__home" href="#home">Home</a>
           <a class="menu__link" href="#about">Profile</a>
           <a class="menu__link" href="#skills">Skills</a>
@@ -31,7 +31,13 @@
           <a class="menu__link" href="#experience">Experience</a>
           <a class="menu__link" href="#contact">Contact</a>
         </div>
-        <button type="button" class="toggle-btn">
+        <button
+          type="button"
+          class="toggle-btn"
+          aria-label="Toggle menu"
+          aria-controls="menuList"
+          aria-expanded="false"
+        >
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>

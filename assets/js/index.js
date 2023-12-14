@@ -6,7 +6,12 @@ const menuLink = document.querySelectorAll(".menu__link");
 
 toggleBtn.addEventListener('click', () => {
   menuList.classList.toggle('active');
-  toggleBtn.classList.toggle('active');
+  toggleBtn.classList.toggle('active'); 
+  if (toggleBtn.getAttribute('aria-expanded') === 'true'){
+    toggleBtn.setAttribute('aria-expanded', 'false'); 
+  } else {
+    toggleBtn.setAttribute('aria-expanded', 'true');
+  }
 });
 
 menuLink.forEach( n => n.addEventListener('click', closeMenu));
@@ -14,4 +19,5 @@ menuLink.forEach( n => n.addEventListener('click', closeMenu));
 function closeMenu() {
     menuList.classList.remove('active');
     toggleBtn.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
 }

@@ -24,7 +24,7 @@
     <header class="header">
       <nav class="menu">
         <div class="menu__list" id="menuList">
-          <a class="menu__link menu__home" href="#home">Home</a>
+          <a class="menu__link menu__link--home" href="#home">Home</a>
           <a class="menu__link" href="#about">Profile</a>
           <a class="menu__link" href="#skills">Skills</a>
           <a class="menu__link" href="#projects">Projects</a>
@@ -33,14 +33,14 @@
         </div>
         <button
           type="button"
-          class="toggle-btn"
+          class="menu__btn"
           aria-label="Toggle menu"
           aria-controls="menuList"
           aria-expanded="false"
         >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
         </button>
       </nav>
     </header>
@@ -48,26 +48,12 @@
     <!--COVER IMAGE-->
     <section id="home">
       <div class="cover">
-        <div class="custom-shape-divider-bottom-1655648853">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-
-        <div class="cover__content txt-animation">
+        <div class="cover__content">
           <h1 class="cover__title">Hi, I am Thuy</h1>
           <p class="cover__text">Junior front-end developer</p>
           <a class="cover__btn" href="/assets/cv/cv-thuy-mai.pdf" download>
-            Full CV download</a
-          >
+            Full CV download
+          </a>
         </div>
       </div>
     </section>
@@ -76,40 +62,41 @@
     <main class="content">
       <!--about-->
       <section id="about" class="about">
-        <div class="about__img">
-          <img src="/assets/img/me-photo.jpg" alt="" />
+        <div class="about__portrait">
+          <img class="about__image" src="/assets/img/me-photo.jpg" alt="" />
         </div>
         <div class="about__info">
-          <h2 class="section__title">About</h2>
+          <h2>About</h2>
           <p><strong>Aspiring front-end developer</strong></p>
-          <div class="about__text">
-            <p>I am Thuy, a front-end developer based in Czechia.</p>
-            <p>
-              I have worked in multiple industries background and I started my
-              complete career transition towards IT field in later 2020 with
-              focus on web and front-end development. These days my time is
-              spent on deep diving into front-end technologies, trends and
-              coding my own projects.
-            </p>
-            <p>
-              Outside my work, you will likely find me roaming around with
-              longboard, drawing on graphic tablet, travelling and spending time
-              with my friends and family.
-            </p>
-          </div>
+          <p>I am Thuy, a front-end developer based in Czechia.</p>
+          <p>
+            I have worked in multiple industries background and I started my
+            complete career transition towards IT field in later 2020 with focus
+            on web and front-end development. These days my time is spent on
+            deep diving into front-end technologies, trends and coding my own
+            projects.
+          </p>
+          <p>
+            Outside my work, you will likely find me roaming around with
+            longboard, drawing on graphic tablet, travelling and spending time
+            with my friends and family.
+          </p>
 
-          <div class="about__social">
-            <a href="https://www.linkedin.com/in/tthuymai/"
-              ><span class="sr-only">LinkedIn</span>
+          <div class="about__links">
+            <a href="https://www.linkedin.com/in/tthuymai/">
+              <span class="sr-only">LinkedIn</span>
               <i
-                class="fa-brands fa-linkedin fa-2xl"
+                class="about__icon fa-brands fa-linkedin fa-2xl"
                 title="LinkedIn profile"
-              ></i
-            ></a>
-            <a href="https://github.com/mtthuy22"
-              ><span class="sr-only">GitHub</span>
-              <i class="fa-brands fa-github fa-2xl" title="Github profile"></i
-            ></a>
+              ></i>
+            </a>
+            <a href="https://github.com/mtthuy22">
+              <span class="sr-only">GitHub</span>
+              <i
+                class="about__icon fa-brands fa-github fa-2xl"
+                title="Github profile"
+              ></i>
+            </a>
             <a download href="/assets/cv/cv-thuy-mai.pdf">
               <img
                 class="about__cv"
@@ -124,174 +111,158 @@
       <!--skills -->
 
       <section id="skills" class="skills">
-        <h2 class="section__title">Skills</h2>
-        <div class="section__list skills__list">
+        <h2>Skills</h2>
+        <div class="skills__list">
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-brands fa-html5 fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">HTML</h3>
-              <p class="skill__text">
-                Semantic HTML elements, tables, lists, BEM methodology
-              </p>
-            </div>
+            <h3>HTML</h3>
+            <p>Semantic HTML elements, tables, lists, BEM methodology</p>
           </article>
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-brands fa-css3-alt fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">CSS</h3>
-              <p class="skill__text">
-                Grid, flexbox, Sass/SCSS preprocessor, basics of responsive
-                design
-              </p>
-            </div>
+            <h3>CSS</h3>
+            <p>
+              Grid, flexbox, Sass/SCSS preprocessor, basics of responsive design
+            </p>
           </article>
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-brands fa-js fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">JavaScript</h3>
-              <p class="skill__text">
-                Basic knowledge of JavaScript, working with functions, arrays,
-                DOM
-              </p>
-            </div>
+            <h3>JavaScript</h3>
+            <p>
+              Basic knowledge of JavaScript, working with functions, arrays, DOM
+            </p>
           </article>
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-brands fa-react fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">JS Frameworks</h3>
-              <p class="skill__text">
-                React.js - basics, components, reading API data, useState and
-                useEffect hooks <br />
-                Vue.js - Basic theoretical knowledge
-              </p>
-            </div>
+            <h3>JS Frameworks</h3>
+            <p>
+              React.js – basics, components, reading API data, useState and
+              useEffect hooks <br />
+              Vue.js – Basic theoretical knowledge
+            </p>
           </article>
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-solid fa-globe fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">Multilingual</h3>
-              <p class="skill__text">
-                English - full proficiency<br />
-                French - intermediate <br />Japanese - elementary <br />
-                Czech, Vietnamese - native speaker
-              </p>
-            </div>
+            <h3>Multilingual</h3>
+            <p>
+              English – full proficiency<br />
+              French – intermediate <br />Japanese – elementary <br />
+              Czech, Vietnamese – native speaker
+            </p>
           </article>
           <article class="skill">
-            <div class="skill__icon">
+            <div class="skills__icon">
               <i class="fa-solid fa-ellipsis fa-4x"></i>
             </div>
-            <div class="skill__desc">
-              <h3 class="skill__title">Other</h3>
-              <p class="skill__text">
-                Photoshop, InDesign basics, Digital illustration, Accounting
-                software
-              </p>
-            </div>
+            <h3>Other</h3>
+            <p>
+              Photoshop, InDesign basics, Digital illustration, Accounting
+              software
+            </p>
           </article>
         </div>
       </section>
 
       <!-- PROJECTS -->
       <section id="projects" class="projects">
-        <h2 class="section__title">Projects</h2>
-        <div class="section__list">
-          <article class="project">
-            <div class="project__image">
-              <img src="/assets/img/portfolio-web.png" alt="" />
-            </div>
-            <div class="project__container">
-              <h3 class="project__title">Portfolio web</h3>
-              <p class="project__text">
-                Personal web created with HTML, CSS and SCSS. You can check out
-                the source code at
-                <a href="https://github.com/mtthuy22/my-personal-website">
-                  here </a
-                >.
-              </p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__image">
-              <img src="/assets/img/product-preview-card.png" alt="" />
-            </div>
-            <div class="project__container">
-              <h3 class="project__title">Product preview card component</h3>
-              <p class="project__text">
-                Responsive product preview component from the
-                <a href="https://www.frontendmentor.io/">Frontendmentor.io</a>
-                website. Built using HTML and pure CSS. You may check the source
-                code
-                <a
-                  href="https://github.com/mtthuy22/product-preview-card-component-main"
-                >
-                  here
-                </a>
-                or see the
-                <a href="https://thuycodes-challenge.netlify.app/"> website </a
-                >.
-              </p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__image">
-              <img src="/assets/img/clipboard-landing-page.png" alt="" />
-            </div>
-            <div class="project__container">
-              <h3 class="project__title">Clipboard landing page</h3>
-              <p class="project__text">
-                Responsive clipboard landing page from the
-                <a href="https://www.frontendmentor.io/">Frontendmentor.io</a>
-                website. Built using HTML, SCSS and by applying BEM methodology.
-                You may check the source code
-                <a href="https://github.com/mtthuy22/clipboard-landing-page">
-                  here
-                </a>
-                or see the
-                <a href="https://mtthuy22.github.io/clipboard-landing-page/">
-                  website </a
-                >.
-              </p>
-            </div>
-          </article>
-        </div>
+        <h2>Projects</h2>
+        <article class="project">
+          <img
+            class="project__image"
+            src="/assets/img/portfolio-web.png"
+            alt=""
+          />
+
+          <div class="project__info">
+            <h3>Portfolio web</h3>
+            <p>
+              Personal web created with HTML, CSS and SCSS. You can check out
+              the source code at
+              <a href="https://github.com/mtthuy22/my-personal-website">
+                here </a
+              >.
+            </p>
+          </div>
+        </article>
+        <article class="project">
+          <img
+            class="project__image"
+            src="/assets/img/product-preview-card.png"
+            alt=""
+          />
+
+          <div class="project__info">
+            <h3>Product preview card component</h3>
+            <p>
+              Responsive product preview component from the
+              <a href="https://www.frontendmentor.io/">Frontendmentor.io</a>
+              website. Built using HTML and pure CSS. You may check the source
+              code
+              <a
+                href="https://github.com/mtthuy22/product-preview-card-component-main"
+              >
+                here
+              </a>
+              or see the
+              <a href="https://thuycodes-challenge.netlify.app/"> website </a>.
+            </p>
+          </div>
+        </article>
+        <article class="project">
+          <img
+            class="project__image"
+            src="/assets/img/clipboard-landing-page.png"
+            alt=""
+          />
+
+          <div class="project__info">
+            <h3>Clipboard landing page</h3>
+            <p>
+              Responsive clipboard landing page from the
+              <a href="https://www.frontendmentor.io/">Frontendmentor.io</a>
+              website. Built using HTML, SCSS and by applying BEM methodology.
+              You may check the source code
+              <a href="https://github.com/mtthuy22/clipboard-landing-page">
+                here
+              </a>
+              or see the
+              <a href="https://mtthuy22.github.io/clipboard-landing-page/">
+                website </a
+              >.
+            </p>
+          </div>
+        </article>
       </section>
 
       <!-- Experience-->
 
-      <section id="experience">
-        <h2 class="section__title">Experience</h2>
-        <div class="section__list">
-          <article class="experience">
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience__list">
+          <article class="experience__item">
             <h3 class="experience__title">Goodwill Housing s.r.o.</h3>
-            <div class="experience__text">
-              <p>Business manager</p>
-              <p>2017-present</p>
-            </div>
+            <p>Business manager</p>
+            <p>2017-present</p>
           </article>
-          <article class="experience">
+          <article class="experience__item">
             <h3 class="experience__title">Fox Hunter s.r.o.</h3>
-            <div class="experience__text">
-              <p>Project specialist</p>
-              <p>2015-2017</p>
-            </div>
+            <p>Project specialist</p>
+            <p>2015-2017</p>
           </article>
-          <article class="experience">
+          <article class="experience__item">
             <h3 class="experience__title">AC&amp;C Public Relations s.r.o.</h3>
-            <div class="experience__text">
-              <p>Account executive</p>
-              <p>2014-2015</p>
-            </div>
+            <p>Account executive</p>
+            <p>2014-2015</p>
           </article>
         </div>
       </section>
@@ -306,12 +277,12 @@
         <div class="contact__item">
           <h2 class="contact__heading">Contact me</h2>
           <p>
-            <a href="mailto:mai.thuthuy91@gmail.com" class="contact__text"
+            <a href="mailto:mai.thuthuy91@gmail.com" class="contact__link"
               >mai.thuthuy91@gmail.com</a
             >
           </p>
-          <p class="contact__text">
-            <a href="tel:+420724966657">+420 724 966 657</a>
+          <p>
+            <a href="tel:+420724966657" class="contact__link">+420 724 966 657</a>
           </p>
         </div>
       </section>

@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $primary-dark;
+  padding: 0.8rem 2rem;
+  z-index: 100;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}

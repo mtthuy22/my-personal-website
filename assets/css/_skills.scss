@@ -1,82 +1,29 @@
-#skills {
-    padding: 100px;
-}
-
 .skills {
-    display: flex;
-    text-align: center;
+    padding: 1rem 5rem;
     background-color: $primary-dark;
     color: $primary-light;
-    flex-direction: column;
-
-    h2 {
-        padding: 0;
-        margin-top: 0;
-    }
-
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding-left: 0;
-    }
+    text-align: center;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(25ch, calc((100% - 6rem)/3)),1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
     justify-items: center;
-    align-items: center;
-    gap: 0.25rem;
-    flex: 1 1 0;
-
-    &__icon {
-        height: 100px;
-        width: 100px;
-        background-color: $primary-light;
-        border-radius: 50%;
-        color: $primary-dark;
-        text-align: center;
-        line-height: 100px;
-        vertical-align: middle;
-        padding: 20px;
+   
+    @media (max-width: $smaller-devices) {
+        grid-template-columns: 1fr;
     }
-
-    &__desc{
-        margin-top: 1rem;
-        display: grid;
-        grid-template-rows: repeat(2,auto);
-    }
-
-    &__title{
-        margin-bottom: 0;
-    }
-
-    &__text{
-        margin-top: 0.5rem;
-    } 
 }
 
-@media only screen and (max-width:$smaller-devices){
-   .skills {
-    padding: 10%;
-    width: 100vw;
-
-    &__list{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
-   } 
-}
-
-@media only screen and (max-width: $tablet){
-    .skills{
-        padding: 10%;
-
-        &__list{
-            grid-template-columns: repeat(2, auto);
-            gap: 2em;
-        }
-    }
+.skills__icon {
+    height: 100px;
+    width: 100px;
+    padding: 1.25rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: $primary-light;
+    color: $primary-dark;
 }

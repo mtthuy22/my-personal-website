@@ -15,10 +15,11 @@
     height: 100vh;
     position: relative;
     filter: saturate(20%);
-
-    @media (max-width: $smaller-devices) {
-        display: none;
-    }
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     @media (max-width: $tablet) {
         background-image: 
@@ -28,15 +29,14 @@
         background-position: 30% 70%;
     }
 
+    @media (max-width: $smaller-devices) {
+        display: none;
+    }
+
     &:hover {
         filter: saturate(80%);
         transition: 3ms;
     }
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .cover__content {

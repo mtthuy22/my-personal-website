@@ -33,7 +33,8 @@ p {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -79,7 +80,7 @@ p {
 @media (max-width: 640px) {
   .menu__list--opened {
     display: flex;
-    width: 100vw;
+    width: 100%;
     padding: 0.5rem;
   }
 }
@@ -150,16 +151,16 @@ p {
   align-items: center;
   text-align: center;
 }
-@media (max-width: 480px) {
-  .cover {
-    display: none;
-  }
-}
 @media (max-width: 1025px) {
   .cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/header.png");
     background-size: cover;
     background-position: 30% 70%;
+  }
+}
+@media (max-width: 480px) {
+  .cover {
+    display: none;
   }
 }
 .cover:hover {
@@ -208,7 +209,8 @@ p {
 
 .about {
   display: flex;
-  padding: 6rem 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -279,7 +281,7 @@ p {
 }
 
 .skills {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   background-color: #272632;
   color: #f7f5fb;
   text-align: center;
@@ -310,7 +312,7 @@ p {
 }
 
 .experience {
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 640px) {
@@ -333,6 +335,7 @@ p {
 .experience__item {
   background-color: #ceced7;
   text-align: center;
+  max-width: 70ch;
   padding: 1rem;
   flex-basis: 33%;
   flex-grow: 0;
@@ -350,42 +353,43 @@ p {
 }
 
 .projects {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
-.project {
+.projects__project {
   display: flex;
   margin-top: 2rem;
 }
 @media (max-width: 1025px) {
-  .project {
+  .projects__project {
     flex-direction: column;
     margin-bottom: 3rem;
   }
 }
 
-.project__info {
+.projects__info {
   text-align: left;
 }
 @media (max-width: 1025px) {
-  .project__info {
+  .projects__info {
     text-align: center;
   }
 }
 
-.project__image {
+.projects__image {
   display: block;
   width: 40%;
   margin-right: 3rem;
 }
 @media (max-width: 1025px) {
-  .project__image {
+  .projects__image {
     width: 100%;
   }
 }
 
 .contact {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -395,11 +399,13 @@ p {
 @media (max-width: 1025px) {
   .contact {
     flex-direction: column;
+    padding: 0;
   }
 }
 
-.contact__item {
+.contact__col {
   text-align: center;
+  flex-basis: calc(33% + 2.2rem);
 }
 
 .contact__heading {
@@ -427,7 +433,7 @@ p {
   text-align: center;
   padding: 20px;
 }
-.footer p {
+.footer .footer__text {
   margin: 0;
 }
 

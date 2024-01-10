@@ -1,5 +1,5 @@
 .contact {
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -8,11 +8,13 @@
 
     @media (max-width: $tablet) {
         flex-direction: column;
+        padding: 0;
     }
 }
 
-.contact__item {
+.contact__col {
     text-align: center;
+    flex-basis: calc(33% + 2.2rem);
 }
 
 .contact__heading {

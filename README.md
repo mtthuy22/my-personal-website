@@ -1,14 +1,14 @@
 # My personal webpage
 
-### Created with:
-- HTML
-- Sass/SCSS
-- JavaScript
-
 Live at:
 https://thuycodes.netlify.app/
 
-## Sass installation 
+## Created with
+- HTML
+- Sass
+- JavaScript
+
+## Installation 
 
 1. Prerequisites: Node.js, npm 
 2. Run `npm ci` 

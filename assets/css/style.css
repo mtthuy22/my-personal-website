@@ -292,7 +292,8 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(max(25ch, (100% - 6rem) / 3), 1fr));
   grid-template-rows: repeat(2, auto);
   gap: 3rem;
-  justify-items: center;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 @media (max-width: 480px) {
   .skills__list {
@@ -324,6 +325,8 @@ p {
 .experience__list {
   display: flex;
   justify-content: center;
+  max-width: 1400px;
+  margin-inline: auto;
   gap: 1.2rem;
 }
 @media (max-width: 1025px) {
@@ -360,16 +363,19 @@ p {
 .projects__project {
   display: flex;
   margin-top: 2rem;
+  column-gap: 3rem;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 @media (max-width: 1025px) {
   .projects__project {
     flex-direction: column;
-    margin-bottom: 3rem;
   }
 }
 
 .projects__info {
   text-align: left;
+  line-height: 1.3;
 }
 @media (max-width: 1025px) {
   .projects__info {
@@ -379,8 +385,7 @@ p {
 
 .projects__image {
   display: block;
-  width: 40%;
-  margin-right: 3rem;
+  width: 50%;
 }
 @media (max-width: 1025px) {
   .projects__image {

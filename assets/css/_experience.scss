@@ -10,6 +10,8 @@
 .experience__list {
     display: flex;
     justify-content: center;
+    max-width: 1400px;
+    margin-inline: auto;
     gap: 1.2rem;
     
     @media (max-width: $tablet){
